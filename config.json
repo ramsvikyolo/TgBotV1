@@ -1,0 +1,21 @@
+{
+    "token": "7426054193:AAH9C5J9-kNl5tHI6qDqb0dwz6pLL6tppPo",
+    "commands": {
+        "/start": {"text": "Welcome! Choose an option:", "buttons": "main_menu"},
+        "/help": {"text": "This is the help message.", "buttons": "help_menu"}
+    },
+    "buttons": {
+        "main_menu": [
+            [{"text": "Option 1", "callback_data": "opt1"}, {"text": "Option 2", "callback_data": "opt2"}]
+        ],
+        "help_menu": [
+            [{"text": "Help Topic 1", "callback_data": "help1"}, {"text": "Help Topic 2", "callback_data": "help2"}]
+        ]
+    },
+    "responses": {
+        "opt1": "You selected Option 1",
+        "opt2": "You selected Option 2",
+        "help1": "Help for Topic 1",
+        "help2": "Help for Topic 2"
+    }
+}
