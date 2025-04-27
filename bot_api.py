@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request
 import requests
 import json
@@ -48,4 +49,5 @@ def webhook():
     return 'OK'
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get('PORT', 5000))  # Use Render's PORT, default to 5000 if not set
+    app.run(host='0.0.0.0', port=port)
